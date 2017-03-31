@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://jecrcuniversity.edu.in/img/slider/28.jpg");
+}
+.second{
+  background-image: url("https://jecrcuniversity.edu.in/upload/JU-170117124037-0-.jpg");
+}
+.dessert{
+  background-image:url("https://jecrcuniversity.edu.in/upload/JU-170117100825-0-.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+img{
+	width:30px;
+}
+</style>
+
+</head>
+
+<body>
+<h1>JECRC University</h1>
+<h2>Build your World</h2>
+<div class="first">
+  <p>Infrastructure <span class="price"><a href="https://www.facebook.com/?stype=lo&jlou=AfdzybsT1OkrWrcXb9oShDstqpoJAXx4lNAMR65VFGovat0xKrubHychswbWUWe2U5u6PsdVctPCv0z388LcZKkNbEf59gHQH-ctkGI9nXyslQ&smuh=16049&lh=Ac8jPVi6kujjvqho"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png"></a> </span><br />
+  <small>White sauce pasta recipe with step by step photos.  Pasta in white sauce recipe is a very easy to make, rich and delicious pasta preparation that we can indulge in once in a while. The white sauce pasta recipe I am blogging today was requested by a reader. </small></p>
+</div>
+
+<div class="second">
+  <p>Hostel Life <span class="price"><a href="https://www.facebook.com/?stype=lo&jlou=AfdzybsT1OkrWrcXb9oShDstqpoJAXx4lNAMR65VFGovat0xKrubHychswbWUWe2U5u6PsdVctPCv0z388LcZKkNbEf59gHQH-ctkGI9nXyslQ&smuh=16049&lh=Ac8jPVi6kujjvqho"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png"></a></span><br />
+  <small>Add lemon zest and red pepper flakes. Add reserved pasta water and lemon juice and allow the asparagus to cook until crisp but tender, about 1 minute.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Students  <span class="price"><a href="https://www.facebook.com/?stype=lo&jlou=AfdzybsT1OkrWrcXb9oShDstqpoJAXx4lNAMR65VFGovat0xKrubHychswbWUWe2U5u6PsdVctPCv0z388LcZKkNbEf59gHQH-ctkGI9nXyslQ&smuh=16049&lh=Ac8jPVi6kujjvqho"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png"></a></span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
